@@ -2,6 +2,8 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.0.5'
     id 'io.spring.dependency-management' version '1.1.0'
+    id 'org.hibernate.orm' version '6.1.6.Final'
+
 }
 
 group = 'com.prod'
@@ -30,6 +32,6 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-tasks.named('test') {
+test{
     useJUnitPlatform()
 }
